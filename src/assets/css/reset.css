@@ -1,0 +1,79 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    font-size: 12px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    user-select: none;
+}
+*{
+    padding: 0;
+    margin: 0;  /*去除所有标签的内外边距*/
+    box-sizing: border-box;
+}
+/* 去除iPhone中默认的input样式 */
+/* -webkit-appearance改变按钮和其他控件的外观，使其类似于原生控件。 */
+/* resize 属性规定是否可由用户调整元素的尺寸。*/
+input{ -webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+/* font-family设置字体的系列*/
+/* -webkit-tap-highlight-color 设置浏览器高亮颜色0,0,0并且透明*/
+/* Microsoft YaHei; font-family:"微软雅黑"；却别在于兼容性问题，因为有中文可能会出现乱码 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    font-family: Microsoft YaHei;}
+/* 设置HTML5元素为块 */
+/*
+①总是在新行上开始；
+②高度，行高以及外边距和内边距都可控制；
+③宽度缺省是它的容器的100%，除非设定一个宽度。
+④它可以容纳内联元素和其他块元素
+头 中  尾  header、section、footer
+*/
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+    display: block;
+}
+/* 图片自适应 */
+/*
+height:auto，是指根据块内内容自动调节高度。
+height:100%，是指其相对父块高度而定义的高度，也就是按照离它最近且有定义高度的父层的高度来定义高度。
+
+width:auto;是宽度自动的意思。
+\9是hack css 的一种写法，这种在正常css代码后面加"\9"的方式，只有IE浏览器才能识别，其他浏览器会忽略这条语句。
+这样就能做到差异化浏览器，来达到兼容浏览器的目的。
+*/
+img {
+    max-width: 100%;
+    height: auto;
+    width:auto\9; /* ie8 */
+    -ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* focus：焦点，outline关于轮廓设置 */
+*:focus {
+    outline:none;
+}
+/* 清零 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;}
+/*常用CSS中不同平台的字体设置，以下是移动端项目设置*/
+body{font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self; color:#555; }
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+/*visibility 属性规定元素是否可见。*/
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;}
+a:hover{color:#969696; text-decoration:none;}
+ul,ol,li{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family:Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC",sans-self;font-style: normal;}
+fieldset,img{border: none;}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/*
+<caption> 标签定义表格的标题。
+<caption> 标签必须直接放置到 <table> 标签之后。
+*/
+caption, th {
+    text-align:left;
+}

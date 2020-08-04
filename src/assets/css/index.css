@@ -1,0 +1,343 @@
+html{
+    font-size: 12px;
+    height: 1000px;
+}
+#header{
+    width: 100%;
+    padding: 1rem 0;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+}
+#header *{
+    vertical-align: top;
+}
+#header span{
+    width: 10%;
+    height: 2.5rem;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#header span:nth-of-type(1){
+    background-image: url("../images/img1/saoyisao@2x.png");
+    background-size: contain;
+    margin-left: 5%;
+}
+#header span:nth-of-type(2){
+    background-image: url("../images/img1/xiaoxi@2x.png");
+    background-size: contain;
+
+}
+#header form{
+    display: inline-block;
+    width: 70%;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 2rem;
+}
+#header form:before{
+    content: "";
+    display: inline-block;
+    width: 12%;
+    height: 1.8rem;
+    background-image: url("../images/img1/sousuo@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0.4rem;
+}
+#header form input{
+    height: 2.5rem;
+    width:75%;
+    font-size: 1.3rem;
+}
+/*----------------��������--------------------*/
+#center_nav{
+    background-color: #ffffff;
+    border-radius: 1.5rem 1.5rem 0 0;
+    position: relative;
+    top: -2.2rem;
+    padding-top: 1.5rem;
+}
+#center_nav ul{
+    display:flex;   /* 设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。 */
+    height: 15rem;
+    justify-content:center; /* 项目位于容器的中心。 */
+    flex-wrap:wrap; /* 规定灵活的项目在必要的时候拆行或拆列。 */
+}
+#center_nav ul li{
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    letter-spacing:2px;
+    font-weight: 500;   /* 100, 200, 300, 400(normal), 500, 600, 700(bold、 lighter、 bolder )*/
+    height:5rem;
+}
+/* 给所有列表里第一个p标签设置统一样式 */
+#center_nav ul li:nth-child(1) p:first-child{
+    height: 6rem;   /* 块元素没有内容就没有高度
+                    行内元素没有内容就没有宽度 */
+    background: url("../images/img1/jd.png") no-repeat;
+    background-size: contain;   /* 使其宽度和高度完全适应内容区域。 */
+    background-position: center;
+}
+#center_nav ul li:nth-child(2) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/jp.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(3) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/hcp.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(4) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/qcp.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(5) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/jdmp.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(6) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/hd.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(7) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/yhj.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(8) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/tjjd.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(9) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/fj.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+#center_nav ul li:nth-child(10) p:first-child{
+    height: 6rem;
+    background: url("../images/img1/gd.png") no-repeat;
+    background-size: contain;  
+    background-position: center;
+}
+/*------------- 特价 ------------*/
+#sp_price{
+    display:flex;   /* 设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。 */
+    height: 16rem;
+    justify-content:center; /* 项目位于容器的中心。 */
+    flex-wrap:wrap; /* 规定灵活的项目在必要的时候拆行或拆列。 */
+}
+
+#sp_price>div{
+    /* border: red 1px solid; */
+    width: 46%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1%;
+    
+}
+#sp_price .left{
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+}
+#sp_price .left>div{
+    background: url("../images/img1/倒计时图片@2x.png");
+    height: 8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hh{
+    width: 48%;
+    background: #58d68d;
+    color: white;
+    /* text-indent:5px; */
+    text-align: center;
+    height: 2rem;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    border-radius: 5px 0 1rem 0;
+}
+#sp_price .left>p:nth-child(2){  
+    font-size: 1.2rem;
+    text-indent: 0.6rem;      /* 行缩进 */
+    margin: 0.8rem 0.3rem 0 0.3rem;
+}
+#sp_price .left>p:nth-child(3){  
+    font-size: 1.2rem;
+    text-indent: 0.5rem;      /* 行缩进 */
+    line-height: 3rem;
+}
+#sp_price .left>p:nth-child(3) span:first-child{
+    font-size: 1.2rem;
+    color: red;
+    text-indent: 1rem;      /* 行缩进 */
+    height: 4rem;
+    line-height: 3rem;
+    /* margin-top: 0.8rem; */
+}
+/* --------特价右侧 --------*/
+#sp_price .right{
+    background: url("../images/img1/组26@2x.png");
+    background-size: 107%;
+    background-position: center;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+#sp_price .right>div{
+    background-color: #48d68d;
+    height: 5rem;
+    border-radius: 0.5rem;
+    background-image: url("../images/img1/jiudian-3@2x.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 90% center;
+}
+#sp_price .right>div h2{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: lighter;
+    line-height: 5rem;
+    text-indent: 1rem;
+    display: inline-block;
+}
+#sp_price .right>div span{
+    display: inline-block;
+    width: 2rem;
+    height: 5rem;
+    background-image: url("../images/img1/箭头@2x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+.right>div h2,span{
+    vertical-align: top;
+}
+.right>p{
+    width: 100%;
+    height: 2rem;
+    background-color: #555555;
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.6;/* 透明度 */
+}
+.right>span{
+    display: inline-block;
+    height: 2rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color:white;
+    text-align: center;
+    line-height: 2rem;
+}
+/*-----------超值特惠1----------*/
+/* #super_price{
+    padding-top: 1rem;
+    position: absolute;
+} */
+#super_price>div:first-child h2{
+    font-size: 2rem;
+    font-weight: lighter;
+    height: 4rem;
+    line-height: 4rem;
+    text-indent: 1rem;
+    color: black;
+    display: inline-block;
+}
+#super_price>div:first-child span{
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    position: absolute;
+    right: 10%;
+}
+/* ---超值特惠-酒店列表---- */
+.jd_list{
+    display:flex;   /* 设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。 */
+    justify-content:center; /* 项目位于容器的中心。 */
+    flex-wrap:wrap;
+}
+.jd_list>div{
+    display: inline-block;
+    width: 30%;
+    margin:1%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+    border-radius: 0.5rem;
+}
+.jd_list>div p{
+   padding-left:0.5rem
+}
+.jd_list>div p:nth-child(2){
+    font-size: 1.2rem;
+    color: black;
+}
+.jd_list>div p:last-child span:first-child{
+    color: red;
+   
+}
+.jd_list>div p:last-child span{
+    line-height: 2.5rem;
+}
+.jd_list>div p:first-child{
+    background-image: url("../images/img1/222.jpg");
+    height: 6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+#gg{
+    width: 94%;
+    margin: 3%;
+}
+/* ---超值特惠-酒店列表2---- */
+.jd_list2{
+    height: 60rem;
+}
+.jd_list2>div{
+    width: 45%;
+    margin:1.5%;  
+}
+.jd_list2>div p:first-child{
+    background-image: url("../images/img1/tupian-2@2x.png");
+    height: 12rem;
+}
+.jd_list>div>span{
+    width:20%;
+    color: #48d68d;
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+    margin: 1rem 0.5rem;
+    line-height: 2rem;
+    background: #48d68d2d;
+}
+/* .jd_list2>div p:last-child span{
+    line-height: 2rem;
+} */
+.jd_list2>div p{
+    padding:0.5rem
+ }
+/*------------ 底部----------- */
+#footer{
+    height: 1000px;
+
+}

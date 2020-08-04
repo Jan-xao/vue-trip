@@ -1,0 +1,72 @@
+{
+  "users":[
+    {
+      "user": "Jan",
+      "password": "123456"
+    },
+    { 
+      "user": "xm",
+      "password": "123456"
+    },
+    {
+      "user": "xh",
+      "password": "123456"
+    },
+    { 
+      "user": "ss",
+      "password": "123456"
+    }
+  ],
+  "navlist":[
+    {
+      "id": 1,
+      "name": "酒店",
+      "url": "../assets/images/img1/jd.png"
+    },
+    {
+      "id": 2,
+      "name": "机票",
+      "url": "../assets/images/img1/jp.png"
+    },
+    {
+      "id": 3,
+      "name": "火车",
+      "url": "../assets/images/img1/hcp.png"
+    },
+    {
+      "id": 4,
+      "name": "汽车票",
+      "url": "../assets/images/img1/qcp.png"
+    },
+    {
+      "id": 5,
+      "name": "景点门票",
+      "url": "../assets/images/img1/jdmp.png"
+    },
+    {
+      "id": 6,
+      "name": "活动",
+      "url": "../assets/images/img1/hd.png"
+    },
+    {
+      "id": 7,
+      "name": "优惠券",
+      "url": "../assets/images/img1/yhj.png"
+    },
+    {
+      "id": 8,
+      "name": "推荐景点",
+      "url": "../assets/images/img1/tjjd.png"
+    },
+    {
+      "id": 9,
+      "name": "附近",
+      "url": "../assets/images/img1/fj.png"
+    },
+    {
+      "id": 10,
+      "name": "更多",
+      "url": "../assets/images/img1/gd.png"
+    }
+  ]
+}
